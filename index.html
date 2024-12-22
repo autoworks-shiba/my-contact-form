@@ -132,6 +132,20 @@
     .btn:hover {
       background: #ff7979;
     }
+    .btn {
+      display: inline-block;
+      background: #ff5e5e;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+.btn:hover {
+  background: #ff7979;
+}
+
 
     /* フッター */
     footer {
@@ -246,21 +260,25 @@
         そんな疑問を持ったときが、“当たり前”を手放すチャンスです。ぜひご相談ください。
       </p>
 
-      <!-- 簡易的な問い合わせフォーム (HTMLのみ) -->
-      <form action="#" method="POST">
-        <label for="name">お名前：</label><br>
-        <input type="text" id="name" name="name" style="width: 100%; max-width: 400px;" required /><br><br>
+      <section id="contact" class="section fade-up">
+        <h2>お問い合わせ</h2>
+        <p>
+          「この作業って本当に必要なの？」「もっと楽になる方法はないの？」<br>
+          そんな疑問を持ったときが、“当たり前”を手放すチャンスです。ぜひご相談ください。
+        </p>
+      
+        <!-- メールリンク -->
+        <p>
+          お問い合わせは、以下のリンクをクリックしてメールをご送信ください：
+        </p>
+        <p>
+          <a href="mailto:automation.works2024@gmail.com?subject=お問い合わせ&body=以下に内容を記入してください。"
+             class="btn">
+            automation.works2024@gmail.com にメールを送る
+          </a>
+        </p>
+      </section>
 
-        <label for="email">メールアドレス：</label><br>
-        <input type="email" id="email" name="email" style="width: 100%; max-width: 400px;" required /><br><br>
-
-        <label for="message">お問い合わせ内容：</label><br>
-        <textarea id="message" name="message" rows="5" style="width: 100%; max-width: 400px;" required></textarea><br><br>
-
-        <button type="submit" class="btn">送信</button>
-      </form>
-    </section>
-  </main>
 
   <!-- フッター -->
   <footer>
